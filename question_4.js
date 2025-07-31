@@ -60,7 +60,6 @@ function estimate(addCost, removeCost, oldSign, newSign) {
   return dp[m][n];
 }
 
-// Test cases
 console.log(estimate(1, 1, "hello", "world")); // Expected: 8 (5 removals + 5 additions):10-2 duplicate
 console.log(estimate(1, 1, "hello", "hello")); // Expected: 0 (no changes needed)
 console.log(estimate(1, 1, "", "hello")); // Expected: 5 (add 5 chars)
